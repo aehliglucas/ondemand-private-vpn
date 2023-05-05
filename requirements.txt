@@ -1,0 +1,2 @@
+ansible==7.5.0
+pytest-testinfra==7.0.0
