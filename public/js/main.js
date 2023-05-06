@@ -14,6 +14,9 @@ async function get_user_data(session) {
 
 function check_session() {
     session = sessionStorage.getItem("opvpn-session")
+    if (!session) {
+        window.location.replace("http://127.0.0.1:5500/login.html")
+    }
     get_user_data(session).then((res) => {
         if (res.status == "ok") {
             if (res.first_name != "") {
