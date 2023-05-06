@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/js/login.js"></script>
+    <link rel="stylesheet" href="/style/login.css">
+    <title>Login - OnDemand VPN by Lycr.eu</title>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <img class="login-icon" src="/img/login-icon.png">
+            <h2 class="login-header">Authentication</h2>
+            <div class="login-prompt-field" id="login-prompt-username">
+                <img class="login-field-icon" src="/img/username-icon.png">
+                <div class="input-wrapper">
+                    <input class="login-prompt-input" id="username" type="text" placeholder="Username" autocomplete="off">
+                    <span class="login-prompt-input-underline"></span>
+                </div>
+            </div>
+            <div class="login-prompt-field" id="login-prompt-password">
+                <img class="login-field-icon" src="/img/passphrase-icon.png">
+                <div class="input-wrapper">
+                    <input class="login-prompt-input" id="password" type="password" placeholder="Password">
+                    <span class="login-prompt-input-underline"></span>
+                </div>
+            </div>
+            <button class="login-button" onclick="auth()">Login</button>
+            <p class="login-copyright">&copy;2023 -- Powered by <span style="color: #2b87ff">Lycr.eu</span></p>
+        </div>
+    </div>
+</body>
+</html>
