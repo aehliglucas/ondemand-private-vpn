@@ -22,9 +22,17 @@ body {
 }
 
 #header-name {
+    display: inline-block;
     color: white;
     margin-left: 5.5vw;
     margin-top: 2vh;
+}
+
+#button-logout {
+    height: 4vh;
+    float: right;
+    margin-right: 6vw;
+    margin-top: 1.5vh;
 }
 
 .content-header {
