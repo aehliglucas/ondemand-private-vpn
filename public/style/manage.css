@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../img/login-background.jpg);
+    background-size: cover;
+}
+
+.container {
+    background-color: #0b0c10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    position: absolute;
+}
+
+#header-name {
+    color: white;
+    margin-left: 5.5vw;
+    margin-top: 2vh;
+}
+
+.content-header {
+    margin-top: 20vh;
+    color: #7a7a7a;
+}
+
+#select-region {
+    margin-top: 4vh;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #393939
+}
