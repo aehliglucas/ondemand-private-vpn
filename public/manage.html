@@ -10,14 +10,22 @@
 </head>
 <body>
     <h2 id="header-name"></h2>
-    <img src="/img/icon-logout.png" id="button-logout">
+    <img src="/img/icon-logout.png" id="button-logout" onclick="close_user_session()">
     <div class="container">
         <h1 class="content-header">Please select a region:</h1>
-        <select name="region" id="select-region">
-            <option value="fi">Helsinki (Finland)</option>
-            <option value="us">Hilsboro (US-West)</option>
-            <option value="us">Ashburn (US-East)</option>
-        </select>
+        <div id="region">
+            <select name="region" id="select-region" onchange="set_region()">
+                <option value="fi">Helsinki (Finland)</option>
+                <option value="us-west">Hilsboro (US-West)</option>
+                <option value="us-east">Ashburn (US-East)</option>
+            </select>
+            <img src="/img/flag_icon_fi.png" class="flag-icon" id="region-flag">
+        </div>
+        <p id="region-status">
+            There are currently no active sessions in this region.<br />
+            Feel free to start a new one by clicking the button below:
+        </p>
+        <button class="start-button" id="button-start" onclick="start_session()">Start Session</button>
     </div>
 </body>
 </html>
