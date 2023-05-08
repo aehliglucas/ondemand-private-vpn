@@ -103,4 +103,9 @@ function set_region() {
     set_start_button(selected_region)
 }
 
+function close_user_session() {
+    sessionStorage.removeItem("opvpn-session")
+    window.location.href = "http://127.0.0.1:5500/login.html"
+}
+
 document.addEventListener('DOMContentLoaded', init_user_session)
